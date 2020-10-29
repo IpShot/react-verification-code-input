@@ -80,7 +80,7 @@ export default class ReactCodeInput extends Component {
     const val = values.join('');
     onChange && onChange(val);
     if (onComplete && val.length >= fields) {
-      onComplete(val);
+      onComplete(val, this.__clearvalues__);
     }
   };
 
